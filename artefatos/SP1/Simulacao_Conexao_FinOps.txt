@@ -1,0 +1,19 @@
+XP Educação – Projeto Aplicado Multi-Cloud
+Aluno: Marcos Vinicius Leal Garcia
+Data: Outubro/2025
+
+$ infracost auth login
+Autenticando na API FinOps...
+Autenticação bem-sucedida ✅
+
+$ infracost configure set aws_profile default
+Conectando à AWS...
+Sincronizando dados de custo e uso...
+512 recursos importados com sucesso.
+
+$ infracost configure set azure_profile prod
+Conectando à Azure...
+Sincronizando dados de custo e uso...
+473 recursos importados com sucesso.
+
+Status geral: Conexão ativa com AWS e Azure ✅
