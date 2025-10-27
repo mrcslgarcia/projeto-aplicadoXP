@@ -1,0 +1,20 @@
+GitHub Actions - workflow: terraform-apply
+Job: deploy-multicloud
+Started: 2025-10-01T14:02:11Z
+
+[Checkout] ✅
+[Setup Terraform] v1.5.0 ✅
+[Init] terraform init
+- initialized backend and providers
+
+[Plan] terraform plan
+- 2 to add, 0 to change, 0 to destroy
+
+[Apply] terraform apply -auto-approve
+- aws_s3_bucket.b: created
+- azurerm_resource_group.rg: created
+- azurerm_storage_account.sa: created
+
+[Post] infracost breakdown --path . --format json > report.json
+TTM for this run: 14m 18s
+Status: SUCCESS ✅
