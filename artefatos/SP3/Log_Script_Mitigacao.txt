@@ -1,0 +1,14 @@
+$ finops-mitigation run --policy tagging
+Scanning resources across AWS and Azure...
+Found 35 non-compliant resources (missing owner / <20% utilization).
+
+Action: stop/terminate idle dev resources out of business hours
+- aws/ec2: vm-002  -> stopped
+- aws/s3:  storage-01 (lifecycle -> cold) -> applied
+- azure/appservice: app-01 -> stopped
+- ... (list truncated)
+
+Summary:
+- 35 resources mitigated
+- Estimated monthly savings: R$ 2.475,00
+Status: COMPLETED ✅
